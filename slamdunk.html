@@ -1,0 +1,274 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slam Dunk - Watch Order & Info</title>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #200000, #000000 70%);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .anime-detail {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(255, 80, 40, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 40px;
+    }
+
+    .anime-detail:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 50px rgba(255, 100, 50, 0.8);
+    }
+
+    .image-container {
+      flex: 1 1 45%;
+      min-width: 300px;
+      max-height: 450px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease, filter 0.4s ease;
+      filter: brightness(0.9) contrast(1.1);
+    }
+
+    .image-container img:hover {
+      transform: scale(1.07);
+      filter: brightness(1) contrast(1.3);
+    }
+
+    .info-container {
+      flex: 1 1 50%;
+      padding: 30px 40px;
+    }
+
+    .info-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ff4d00;
+      text-shadow: 0 0 25px rgba(255, 77, 0, 0.9);
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #ffcc70;
+      margin-bottom: 20px;
+    }
+
+    .details p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .desc {
+      margin-top: 15px;
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #e0e0e0;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: transparent;
+      border: 2px solid #ff4d00;
+      color: #ff4d00;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ff4d00;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* ---------- Watch Order Section ---------- */
+    .watch-order {
+      max-width: 1000px;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 35px rgba(255, 80, 40, 0.5);
+    }
+
+    .watch-order h2 {
+      text-align: center;
+      color: #ff4d00;
+      text-shadow: 0 0 20px rgba(255, 100, 50, 0.8);
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    th {
+      background-color: rgba(255, 100, 50, 0.3);
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: rgba(255, 100, 50, 0.15);
+      transition: 0.3s ease;
+    }
+
+    .rating {
+      color: #ffcc70;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(255, 204, 112, 0.7);
+    }
+
+    @media (max-width: 768px) {
+      .anime-detail {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-container {
+        max-height: 300px;
+      }
+
+      .info-container {
+        padding: 20px;
+      }
+
+      .info-container h1 {
+        font-size: 2rem;
+      }
+
+      th, td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MAIN INFO SECTION -->
+  <div class="anime-detail">
+    <div class="image-container">
+      <img src="https://images.alphacoders.com/101/thumbbig-1014357.webp" alt="Slam Dunk">
+    </div>
+
+    <div class="info-container">
+      <h1>Slam Dunk</h1>
+      <p class="tagline">"I’m not just playing basketball… I’m changing myself!"</p>
+
+      <div class="details">
+        <p><b>🏀 Genre:</b> Sports (Basketball), Comedy, Drama</p>
+        <p><b>📅 Seasons:</b> 1</p>
+        <p><b>🎞️ Episodes:</b> 101</p>
+        <p><b>🎥 Movies:</b> 5 (including *The First Slam Dunk*)</p>
+        <p><b>⭐ Rating:</b> <span class="rating">8.9 / 10</span></p>
+      </div>
+
+      <p class="desc">
+        Hanamichi Sakuragi, a delinquent high schooler with no basketball experience,  
+        joins the Shohoku High basketball team to impress a girl. What begins as  
+        arrogance turns into passion as he learns teamwork, discipline, and love  
+        for the game — alongside legends like Rukawa and Akagi. 🏀🔥
+      </p>
+
+      <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <!-- WATCH ORDER SECTION -->
+  <div class="watch-order">
+    <h2>📺 Watch Order (Series + Movies)</h2>
+    <table>
+      <tr>
+        <th>Order</th>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Episodes / Duration</th>
+        <th>Year</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>1️⃣</td>
+        <td>Slam Dunk (Anime Series)</td>
+        <td>TV Series</td>
+        <td>101 Episodes</td>
+        <td>1993–1996</td>
+        <td>Start here — main storyline, classic anime art & energy.</td>
+      </tr>
+      <tr>
+        <td>2️⃣</td>
+        <td>Slam Dunk Movie 1</td>
+        <td>Movie</td>
+        <td>30 min</td>
+        <td>1994</td>
+        <td>Bonus story — Shohoku vs Takezono.</td>
+      </tr>
+      <tr>
+        <td>3️⃣</td>
+        <td>Slam Dunk Movie 2</td>
+        <td>Movie</td>
+        <td>30 min</td>
+        <td>1994</td>
+        <td>Rukawa-focused side match.</td>
+      </tr>
+      <tr>
+        <td>4️⃣</td>
+        <td>Slam Dunk Movie 3</td>
+        <td>Movie</td>
+        <td>40 min</td>
+        <td>1995</td>
+        <td>Continuation of team growth arc.</td>
+      </tr>
+      <tr>
+        <td>5️⃣</td>
+        <td>Slam Dunk Movie 4</td>
+        <td>Movie</td>
+        <td>40 min</td>
+        <td>1995</td>
+        <td>Final classic movie before reboot.</td>
+      </tr>
+      <tr>
+        <td>6️⃣</td>
+        <td>The First Slam Dunk</td>
+        <td>Movie (Reboot)</td>
+        <td>2 hrs</td>
+        <td>2022</td>
+        <td>Modern remake — focus on Ryota Miyagi & emotional storytelling.</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
