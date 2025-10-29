@@ -1,70 +1,85 @@
- /* General */
+  /* General */
 html {
   scroll-behavior: smooth;
 }
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', sans-serif;
+  /* font-family: 'Segoe UI', sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
   /* width: 100%; */
   overflow-x: hidden;
 }
+h2{
+  font-size: 24px;
+  font-weight: bold;
+  /* color: #ff6b6b; */
+  color: #fff;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  cursor: pointer;
+}
 
-/* Video BG */
-/* .bg-video {
-  position: absolute;
+h2:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 15px #ff6b6b, 0 0 25px #ff6b6b;
+}
+
+ 
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* pure screen height */
+  overflow: hidden;
+}
+
+/* Video container */
+.video-background {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vw;
-  object-fit: cover;
-  z-index: -2;
-} */
-/* .manga-video{
-  position: absolute;
-  top: 100%;
-  left: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Video itself */
+.video-background video {
   width: 100%;
-  height: 100vmax;
-  object-fit: cover;
-  z-index: -2;
-} */
-/* .overlay {
+  height: 100vh;
+  object-fit: cover; /* cover screen fully */
+  /* object-position: center; */
+}
+
+/* Overlay for tint */
+.video-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: -1;
-} */
- 
-/*Video Backgroung  */
-
-  .video-background {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  overflow: hidden;
-  z-index: -1;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .hero {
+    height: 100vh;
+  }
+  .video-background video {
+    object-fit: cover;
+    /* object-position: center; */
+  }
 }
 
-.video-foreground iframe {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 120%;
-  height: 120%;
-  pointer-events: none;
-}
 
-/* ye overlay YouTube ke hover ko block karega */
-.video-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.3); /* halka dark tint */
-  pointer-events: none;
+/* Text on top */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  padding-top: 20vh;
 }
 
 
@@ -74,33 +89,77 @@ body, html {
   font-size: 24px;
   font-weight: bold;
   color: #ff6b6b;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
+
+.logo:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 15px #ff6b6b, 0 0 25px #ff6b6b;
+}
+
 .navbar {
   position: absolute;
   top: 0;
   left: 0;
   width: 95.2%;
-  background: rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.2);
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 10;
 }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
 .nav-links a {
+  position: relative;
   color: #fff;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
-  transition: color 0.3s;
+  font-size: 17px;
+  transition: all 0.3s ease;
+  padding-bottom: 5px;
 }
+
+/* 🔥 Animated underline */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #1bb7f5, #ff6b6b);
+  transition: width 0.4s ease;
+  border-radius: 2px;
+}
+
+/* Hover effects */
 .nav-links a:hover {
   color: #1bb7f5;
-  text-shadow: 0 0 15px rgb(127, 203, 244),
-               0 0 30px rgb(127, 203, 244),
-               0 0 45px rgb(127, 203, 244),
-               0 0 60px rgb(127, 203, 244);
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #1bb7f5, 0 0 25px #1bb7f5;
 }
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+
+
+
 .len {
   padding: 15px 30px;
   display: block;
@@ -166,6 +225,7 @@ body, html {
   text-align: center;
   color: #fff;
   overflow: hidden;
+  object-fit: cover;
 }
 .hero-text {
   position: relative;
@@ -175,20 +235,31 @@ body, html {
   font-size: 3em;
   margin-bottom: 10px;
   color: #fff;
+  /* color:#1bb7f5, #ff6b6b;  */
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid #ff6b6b;
   width: 0;
-  animation: typing 2s steps(20, end) forwards, blink 0.5s ease-in-out infinite;
+  animation: typing 2s steps(20, end) forwards,blink 0.5s ease-in-out infinite;
 }
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from { width: 0; 
+  font-family: 'Segoe UI', sans-serif;
+  }
+  to { width: 100%;
+  color: #ff6b6b;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 10px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% { border-color: transparent;
+    text-shadow:0 0 10px #fcfefd;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
 }
 
 .hero-text p {
@@ -216,7 +287,7 @@ body, html {
 }
 .contain h2{
   margin-bottom: 20px;
-  color: #ff6b6b;
+  color: #fefdfd;
 }
 /* Sections */
 .container {
@@ -227,7 +298,7 @@ body, html {
 }
 .container h2 {
   margin-bottom: 20px;
-  color: #ff6b6b;
+  color: #f3fcfc;
 }
 .gallery-section {
   padding: 15px 25px;
@@ -236,16 +307,16 @@ body, html {
   align-items: center;
 }
 
-/* Anime Gallery */
 .anime-gallery {
-  /* background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 25px;
   margin: 40px auto;
   max-width: 900px;
+  perspective: 1000px; /* 3D effect ke liye zaroori */
 }
+
 .anime-card {
   display: block;
   width: 200px;
@@ -253,16 +324,18 @@ body, html {
   cursor: pointer;
   border-radius: 20px;
   overflow: hidden;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 15px rgba(42, 142, 231, 0.4),
               0 0 25px rgba(255, 204, 112, 0.2);
   text-decoration: none;
   color: #fff;
-  transition: transform 0.3s ease, box-shadow 0.4s ease;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
 }
+
 .anime-card img {
   width: 100%;
   height: 250px;
@@ -270,23 +343,29 @@ body, html {
   border-bottom: 1px solid rgba(255,255,255,0.1);
   transition: transform 0.4s ease;
 }
+
 .anime-card p {
   padding: 7px;
   font-size: 1.1em;
   font-weight: bold;
   transition: color 0.3s ease;
 }
+
+/* Hover 3D Tilt + Scale */
 .anime-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 0 20px rgba(48, 128, 227, 0.8),
-              0 0 40px rgba(255, 204, 112, 0.6);
+  transform: rotateY(10deg) rotateX(5deg) scale(1.08);
+  box-shadow: 0 0 30px rgba(48, 128, 227, 0.9),
+              0 0 60px rgba(255, 204, 112, 0.7);
 }
+
 .anime-card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.12);
 }
+
 .anime-card:hover p {
   color: #ffcc70;
 }
+
 
 /* Categories */
 .len {
@@ -303,6 +382,19 @@ body, html {
   transform: scale(1.13);
   transition: 400ms;
 }
+.category-boxes a:hover {
+  color: #1bb7f5;
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #1bb7f5, 0 0 25px #1bb7f5;
+}
+
+.category-boxes a:hover::after {
+  width: 100%;
+}
+
+.category-boxes a.active::after {
+  width: 100%;
+}
 .category {
   /* background: #ff6b6b; */
   padding: 15px 25px;
@@ -313,7 +405,7 @@ body, html {
   transition: background 0.3s;
 }
 .category:hover {
-  background: #ff3b3b;
+  background: #1bb7f5;
 }
 
 /* Contact */
@@ -356,6 +448,7 @@ h2 {
   text-align: center;
   padding: 20px;
 }
+ 
 .socials a {
   margin: 0 10px;
   color: #ff6b6b;
@@ -366,8 +459,8 @@ h2 {
   color: #fff;
   text-shadow: 0 0 15px rgb(127, 203, 244),
                0 0 30px rgb(127, 203, 244);
+  /* transform: scale(2); */
   transition: 400ms;
-  transform: scale(3);
 }
  
 /* Action Anime Category */
