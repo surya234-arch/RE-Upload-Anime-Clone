@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>I Want to Eat Your Pancreas - Movie Info</title>
+
+  <style>
+    :root{
+      --bg1:#081226;
+      --bg2:#000814;
+      --accent:#ff9aa2;
+      --accent-2:#ffd166;
+      --card-bg: rgba(255,255,255,0.04);
+      --glass: rgba(255,255,255,0.06);
+      --text:#f2f7fb;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      padding:40px 20px;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      background: radial-gradient(circle at 20% 10%, var(--bg1), var(--bg2) 70%);
+      color:var(--text);
+    }
+
+    .movie-container{
+      display:flex;
+      flex-wrap:wrap;
+      gap:28px;
+      max-width:1000px;
+      width:100%;
+      background:var(--card-bg);
+      border-radius:16px;
+      overflow:hidden;
+      backdrop-filter:blur(10px);
+      box-shadow:0 8px 40px rgba(0,0,0,0.6), 0 0 30px rgba(80,140,200,0.06);
+      transition:transform .28s ease, box-shadow .28s ease;
+    }
+    .movie-container:hover{ transform:translateY(-6px); box-shadow:0 14px 60px rgba(0,0,0,0.7); }
+
+    /* image column */
+    .image-container{
+      flex:1 1 44%;
+      min-width:260px;
+      max-height:500px;
+      overflow:hidden;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.08));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .image-container img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:transform .5s ease, filter .4s ease;
+      filter:contrast(1.02) saturate(1.05);
+    }
+    .image-container img:hover{ transform:scale(1.06); }
+
+    /* info column */
+    .info-container{
+      flex:1 1 50%;
+      padding:32px 34px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .info-container h1{
+      margin:0;
+      font-size:2.4rem;
+      color:var(--accent);
+      text-shadow:0 0 18px rgba(255,154,162,0.12);
+      letter-spacing:0.2px;
+    }
+    .tagline{
+      margin:0;
+      color:var(--accent-2);
+      font-style:italic;
+    }
+
+    .meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 18px;
+      margin-top:6px;
+    }
+    .meta .pill{
+      background:var(--glass);
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:0.95rem;
+      color:var(--text);
+      border:1px solid rgba(255,255,255,0.04);
+    }
+
+    .desc{
+      margin-top:10px;
+      line-height:1.6;
+      color:#dbeefd;
+      font-size:1.02rem;
+    }
+
+    .extra{
+      margin-top:auto;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .back-btn{
+      text-decoration:none;
+      color:var(--accent);
+      border:2px solid rgba(255,154,162,0.18);
+      padding:10px 18px;
+      border-radius:10px;
+      transition:all .24s ease;
+      background:transparent;
+      font-weight:600;
+    }
+    .back-btn:hover{ background:var(--accent); color:#000; transform:scale(1.03); }
+
+    /* watch table */
+    .watch-info{
+      margin-top:28px;
+      max-width:1000px;
+      width:100%;
+      background:var(--card-bg);
+      border-radius:12px;
+      padding:22px;
+      box-shadow:0 8px 30px rgba(0,0,0,0.55);
+    }
+    .watch-info h2{
+      margin:0 0 16px 0;
+      color:var(--accent);
+      text-shadow:0 0 12px rgba(255,154,162,0.08);
+      font-size:1.6rem;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      font-size:0.98rem;
+      color:var(--text);
+    }
+    th,td{
+      padding:10px 12px;
+      border:1px solid rgba(255,255,255,0.04);
+      text-align:left;
+    }
+    th{ background:linear-gradient(90deg, rgba(255,154,162,0.06), rgba(255,209,102,0.03)); color:var(--text); font-weight:700;}
+    tr:hover{ background:linear-gradient(90deg, rgba(255,154,162,0.03), rgba(255,209,102,0.02)); }
+
+    .rating{ color:var(--accent-2); font-weight:700; }
+
+    /* small screens */
+    @media (max-width:820px){
+      .movie-container{ flex-direction:column; }
+      .image-container{ max-height:320px; }
+      .info-container{ padding:20px; }
+      .info-container h1{ font-size:1.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="movie-container">
+    <div class="image-container">
+      <!-- replace with your banner image -->
+      <img src="https://picfiles.alphacoders.com/564/thumb-1920-564611.jpg" alt="I Want to Eat Your Pancreas - banner" />
+    </div>
+
+    <div class="info-container">
+      <h1>I Want to Eat Your Pancreas</h1>
+      <p class="tagline">“A short life can still have meaning.”</p>
+
+      <div class="meta">
+        <div class="pill">🎞 Movie</div>
+        <div class="pill">📅 2018</div>
+        <div class="pill">⏱ 1h 57m</div>
+        <div class="pill">⭐ <span class="rating">8.6 / 10</span></div>
+        <div class="pill">🎬 Director: Shinichirō Ushijima</div>
+      </div>
+
+      <p class="desc">
+        Based on the novel by Yoru Sumino, <strong>I Want to Eat Your Pancreas</strong> is a tender, bittersweet film about two high-school classmates:
+        a quiet boy and Sakura Yamauchi — a lively girl secretly suffering from a terminal illness. Through friendship, they discover meaning, forgiveness, and how to truly live.
+      </p>
+
+      <div class="extra">
+        <a class="back-btn" href="index.html">⬅ Back to Home</a>
+        <div style="color: #cfe9ff; font-size:0.95rem;">Genres: Drama, Romance, Slice of Life</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="watch-info">
+    <h2>📺 Watch Info & Notes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Order</th>
+          <th>Title</th>
+          <th>Type</th>
+          <th>Year</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1️⃣</td>
+          <td>I Want to Eat Your Pancreas</td>
+          <td>Movie</td>
+          <td>2018</td>
+          <td>Main film — standalone. Watch this first (only official adaptation).</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
