@@ -1,0 +1,266 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Death Note - Watch Order & Info</title>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #000000, #0a0a0a 70%);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .anime-detail {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      background: rgba(0, 0, 0, 0.65);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 35px rgba(255, 255, 255, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 40px;
+    }
+
+    .anime-detail:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 50px rgba(255, 255, 255, 0.4);
+    }
+
+    .image-container {
+      flex: 1 1 45%;
+      min-width: 300px;
+      max-height: 450px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease, filter 0.4s ease;
+      filter: brightness(0.85) contrast(1.1);
+    }
+
+    .image-container img:hover {
+      transform: scale(1.07);
+      filter: brightness(1) contrast(1.3);
+    }
+
+    .info-container {
+      flex: 1 1 50%;
+      padding: 30px 40px;
+    }
+
+    .info-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ff0000;
+      text-shadow: 0 0 25px rgba(255, 0, 0, 0.8);
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #b3b3b3;
+      margin-bottom: 20px;
+    }
+
+    .details p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .desc {
+      margin-top: 15px;
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #dcdcdc;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: transparent;
+      border: 2px solid #ff0000;
+      color: #ff0000;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ff0000;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* ---------- Watch Order Section ---------- */
+    .watch-order {
+      max-width: 1000px;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 35px rgba(255, 255, 255, 0.2);
+    }
+
+    .watch-order h2 {
+      text-align: center;
+      color: #ff0000;
+      text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    th {
+      background-color: rgba(255, 0, 0, 0.3);
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: rgba(255, 0, 0, 0.15);
+      transition: 0.3s ease;
+    }
+
+    .rating {
+      color: #ffcc70;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(255, 204, 112, 0.7);
+    }
+
+    @media (max-width: 768px) {
+      .anime-detail {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-container {
+        max-height: 300px;
+      }
+
+      .info-container {
+        padding: 20px;
+      }
+
+      .info-container h1 {
+        font-size: 2rem;
+      }
+
+      th, td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MAIN INFO SECTION -->
+  <div class="anime-detail">
+    <div class="image-container">
+      <img src="https://4kwallpapers.com/images/walls/thumbs_2t/16516.jpg" alt="Death Note">
+    </div>
+
+    <div class="info-container">
+      <h1>Death Note</h1>
+      <p class="tagline">"The human whose name is written in this note shall die."</p>
+
+      <div class="details">
+        <p><b>🎬 Genre:</b> Psychological Thriller, Mystery, Supernatural</p>
+        <p><b>📅 Seasons:</b> 1</p>
+        <p><b>🎞️ Episodes:</b> 37</p>
+        <p><b>🎥 Movies:</b> 2 (Live-action adaptations)</p>
+        <p><b>⭐ Rating:</b> <span class="rating">9.0 / 10</span></p>
+      </div>
+
+      <p class="desc">
+        A high school student, Light Yagami, stumbles upon a mysterious notebook  
+        dropped by a Shinigami (death god). With it, he can kill anyone by writing  
+        their name. As he takes justice into his own hands, the world’s greatest  
+        detective, “L,” begins a mind-bending duel of intellects.
+      </p>
+
+      <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <!-- WATCH ORDER SECTION -->
+  <div class="watch-order">
+    <h2>📺 Watch Order (Series + Movies)</h2>
+    <table>
+      <tr>
+        <th>Order</th>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Episodes / Duration</th>
+        <th>Year</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>1️⃣</td>
+        <td>Death Note (Anime Series)</td>
+        <td>TV Series</td>
+        <td>37 Episodes</td>
+        <td>2006–2007</td>
+        <td>Start here — original masterpiece of the story.</td>
+      </tr>
+      <tr>
+        <td>2️⃣</td>
+        <td>Death Note: Relight 1 - Visions of a God</td>
+        <td>Special</td>
+        <td>2 hours</td>
+        <td>2007</td>
+        <td>Summary recap from Ryuk’s POV.</td>
+      </tr>
+      <tr>
+        <td>3️⃣</td>
+        <td>Death Note: Relight 2 - L’s Successors</td>
+        <td>Special</td>
+        <td>2 hours</td>
+        <td>2008</td>
+        <td>Covers post-L story in short form.</td>
+      </tr>
+      <tr>
+        <td>4️⃣</td>
+        <td>Death Note (Live Action 1 & 2)</td>
+        <td>Movies</td>
+        <td>~2 hours each</td>
+        <td>2006</td>
+        <td>Alternative ending; not required but interesting.</td>
+      </tr>
+      <tr>
+        <td>5️⃣</td>
+        <td>Death Note: New Generation</td>
+        <td>Mini-Series</td>
+        <td>3 Episodes</td>
+        <td>2016</td>
+        <td>Connects to Japanese live-action film “Light up the NEW World.”</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
