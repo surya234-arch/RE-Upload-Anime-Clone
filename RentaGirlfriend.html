@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rent-A-Girlfriend - Anime Info</title>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #0a192f, #000);
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .anime-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(255, 100, 150, 0.5);
+      backdrop-filter: blur(10px);
+      margin-bottom: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .anime-container:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 60px rgba(255, 150, 200, 0.8);
+    }
+
+    .image-container {
+      flex: 1 1 45%;
+      min-width: 300px;
+      max-height: 450px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    .info-container {
+      flex: 1 1 50%;
+      padding: 30px 40px;
+    }
+
+    .info-container h1 {
+      font-size: 2.5rem;
+      color: #ff6b81;
+      text-shadow: 0 0 25px rgba(255, 100, 150, 0.9);
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #ffd1dc;
+      margin-bottom: 20px;
+    }
+
+    .details p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .desc {
+      margin-top: 15px;
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #ddd;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: transparent;
+      border: 2px solid #ff6b81;
+      color: #ff6b81;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ff6b81;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* Seasons table */
+    .watch-info {
+      max-width: 1000px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 35px rgba(255, 100, 150, 0.5);
+    }
+
+    .watch-info h2 {
+      text-align: center;
+      color: #ff6b81;
+      text-shadow: 0 0 20px rgba(255, 150, 200, 0.8);
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    th {
+      background-color: rgba(255, 150, 200, 0.2);
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: rgba(255, 100, 150, 0.1);
+      transition: 0.3s ease;
+    }
+
+    .rating {
+      color: #ffd1dc;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(255, 200, 200, 0.7);
+    }
+
+    @media (max-width: 768px) {
+      .anime-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-container {
+        max-height: 300px;
+      }
+
+      .info-container {
+        padding: 20px;
+      }
+
+      .info-container h1 {
+        font-size: 2rem;
+      }
+
+      th, td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="anime-container">
+    <div class="image-container">
+      <img src="https://picfiles.alphacoders.com/435/thumb-1920-435225.jpg" alt="Rent-A-Girlfriend">
+    </div>
+
+    <div class="info-container">
+      <h1>Rent-A-Girlfriend</h1>
+      <p class="tagline">“When love can be rented, emotions can’t be.” 💞</p>
+
+      <div class="details">
+        <p><b>🎞️ Type:</b> TV Series</p>
+        <p><b>📅 Release Year:</b> 2020–Present</p>
+        <p><b>⭐ Rating:</b> <span class="rating">7.1 / 10</span></p>
+        <p><b>🏷️ Genre:</b> Romance, Comedy, Drama</p>
+        <p><b>🎬 Studio:</b> TMS Entertainment</p>
+      </div>
+
+      <p class="desc">
+        <b>Rent-A-Girlfriend (Kanojo, Okarishimasu)</b> follows <b>Kazuya Kinoshita</b>, a college student heartbroken after a breakup who rents a girlfriend, <b>Chizuru Mizuhara</b>.  
+        What begins as a fake relationship soon becomes complicated with emotions, secrets, and multiple girlfriends entering his life 💕😂  
+        The anime beautifully blends humor, awkward romance, and character growth.
+      </p>
+
+      <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <div class="watch-info">
+    <h2>📺 Watch Order & Seasons</h2>
+    <table>
+      <tr>
+        <th>Order</th>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Year</th>
+        <th>Episodes</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>1️⃣</td>
+        <td><b>Rent-A-Girlfriend (Season 1)</b></td>
+        <td>TV</td>
+        <td>2020</td>
+        <td>12</td>
+        <td>Introduces Kazuya and Chizuru.</td>
+      </tr>
+      <tr>
+        <td>2️⃣</td>
+        <td><b>Rent-A-Girlfriend (Season 2)</b></td>
+        <td>TV</td>
+        <td>2022</td>
+        <td>12</td>
+        <td>Expands on their developing feelings.</td>
+      </tr>
+      <tr>
+        <td>3️⃣</td>
+        <td><b>Rent-A-Girlfriend (Season 3)</b></td>
+        <td>TV</td>
+        <td>2023</td>
+        <td>12</td>
+        <td>Deeper emotional arc for Chizuru and Kazuya.</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
