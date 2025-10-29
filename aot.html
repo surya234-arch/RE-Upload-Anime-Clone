@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attack on Titan - Anime Info</title>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #1a0000, #0a0a0a 70%);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Main container */
+    .anime-detail {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 35px rgba(255, 60, 0, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .anime-detail:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 50px rgba(255, 60, 0, 0.8);
+    }
+
+    /* Image section */
+    .image-container {
+      flex: 1 1 45%;
+      min-width: 300px;
+      max-height: 450px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease, filter 0.4s ease;
+      filter: brightness(0.85) contrast(1.1);
+    }
+
+    .image-container img:hover {
+      transform: scale(1.07);
+      filter: brightness(1) contrast(1.2);
+    }
+
+    /* Info section */
+    .info-container {
+      flex: 1 1 50%;
+      padding: 30px 40px;
+    }
+
+    .info-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ff3c00;
+      text-shadow: 0 0 25px rgba(255, 60, 0, 0.8);
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #ffae42;
+      margin-bottom: 20px;
+    }
+
+    .details p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .desc {
+      margin-top: 15px;
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #e0e0e0;
+    }
+
+    /* Button */
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: transparent;
+      border: 2px solid #ff3c00;
+      color: #ff3c00;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ff3c00;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .anime-detail {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-container {
+        max-height: 300px;
+      }
+
+      .info-container {
+        padding: 20px;
+      }
+
+      .info-container h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="anime-detail">
+    <div class="image-container">
+      <!-- Yahan apni image ka path lagana -->
+      <img src="https://4kwallpapers.com/images/walls/thumbs_2t/10339.jpg" alt="Attack on Titan">
+    </div>
+
+    <div class="info-container">
+      <h1>Attack on Titan</h1>
+      <p class="tagline">"Humanity’s last stand begins now."</p>
+
+      <div class="details">
+        <p><b>🎬 Genre:</b> Action, Dark Fantasy, Drama</p>
+        <p><b>📅 Seasons:</b> 4</p>
+        <p><b>🎞️ Episodes:</b> 94</p>
+        <p><b>⭐ Rating:</b> 9.7/10</p>
+      </div>
+
+      <p class="desc">
+        After humanity is pushed to the brink by gigantic humanoid Titans, 
+        Eren Yeager vows to destroy them all.  
+        As secrets of the Titans unfold, the battle between freedom and fate begins.
+      </p>
+
+      <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
