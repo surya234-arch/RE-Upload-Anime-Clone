@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Demon Slayer - Watch Order & Info</title>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #1b0000, #020a0a 75%);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .anime-detail {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(12px);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 35px rgba(255, 80, 80, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 40px;
+    }
+
+    .anime-detail:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 50px rgba(255, 80, 80, 0.8);
+    }
+
+    .image-container {
+      flex: 1 1 45%;
+      min-width: 300px;
+      max-height: 450px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease, filter 0.4s ease;
+      filter: brightness(0.85) contrast(1.1);
+    }
+
+    .image-container img:hover {
+      transform: scale(1.07);
+      filter: brightness(1) contrast(1.2);
+    }
+
+    .info-container {
+      flex: 1 1 50%;
+      padding: 30px 40px;
+    }
+
+    .info-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ff5050;
+      text-shadow: 0 0 25px rgba(255, 90, 90, 0.9);
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #00c8c8;
+      margin-bottom: 20px;
+    }
+
+    .details p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .desc {
+      margin-top: 15px;
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #e0e0e0;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: transparent;
+      border: 2px solid #ff5050;
+      color: #ff5050;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ff5050;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* ---------- Watch Order Section ---------- */
+    .watch-order {
+      max-width: 1000px;
+      background: rgba(0, 0, 0, 0.55);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 35px rgba(255, 80, 80, 0.4);
+    }
+
+    .watch-order h2 {
+      text-align: center;
+      color: #ff5050;
+      text-shadow: 0 0 20px rgba(255, 80, 80, 0.8);
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    th {
+      background-color: rgba(255, 80, 80, 0.3);
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: rgba(255, 80, 80, 0.15);
+      transition: 0.3s ease;
+    }
+
+    .rating {
+      color: #ffcc70;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(255, 204, 112, 0.7);
+    }
+
+    @media (max-width: 768px) {
+      .anime-detail {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-container {
+        max-height: 300px;
+      }
+
+      .info-container {
+        padding: 20px;
+      }
+
+      .info-container h1 {
+        font-size: 2rem;
+      }
+
+      th, td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MAIN INFO SECTION -->
+  <div class="anime-detail">
+    <div class="image-container">
+      <img src="https://4kwallpapers.com/images/walls/thumbs_2t/23247.jpg" alt="Demon Slayer">
+    </div>
+
+    <div class="info-container">
+      <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+      <p class="tagline">"Breathe. Focus. Become the blade that slays demons."</p>
+
+      <div class="details">
+        <p><b>🎬 Genre:</b> Action, Fantasy, Adventure</p>
+        <p><b>📅 Seasons:</b> 4</p>
+        <p><b>🎞️ Episodes:</b> ~55</p>
+        <p><b>🎥 Movies:</b> 1 (Mugen Train)</p>
+        <p><b>⭐ Rating:</b> <span class="rating">9.4 / 10</span></p>
+      </div>
+
+      <p class="desc">
+        Tanjiro Kamado’s peaceful life shatters when demons slaughter his family.  
+        With his sister Nezuko turned into a demon, Tanjiro joins the Demon Slayer Corps,  
+        mastering the art of Water Breathing to fight back against evil and seek redemption.
+      </p>
+
+      <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <!-- WATCH ORDER SECTION -->
+  <div class="watch-order">
+    <h2>📺 Watch Order (Series + Movies)</h2>
+    <table>
+      <tr>
+        <th>Order</th>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Episodes / Duration</th>
+        <th>Year</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>1️⃣</td>
+        <td>Kimetsu no Yaiba - Season 1</td>
+        <td>TV Series</td>
+        <td>26 Episodes</td>
+        <td>2019</td>
+        <td>Start here — introduces main characters & Corps.</td>
+      </tr>
+      <tr>
+        <td>2️⃣</td>
+        <td>Mugen Train</td>
+        <td>Movie</td>
+        <td>1h 57min</td>
+        <td>2020</td>
+        <td>Direct sequel to Season 1 — essential movie.</td>
+      </tr>
+      <tr>
+        <td>3️⃣</td>
+        <td>Entertainment District Arc</td>
+        <td>TV Series</td>
+        <td>11 Episodes</td>
+        <td>2021–2022</td>
+        <td>Tengen Uzui (Sound Hashira) arc — stunning visuals!</td>
+      </tr>
+      <tr>
+        <td>4️⃣</td>
+        <td>Swordsmith Village Arc</td>
+        <td>TV Series</td>
+        <td>11 Episodes</td>
+        <td>2023</td>
+        <td>Focuses on Love & Mist Hashira.</td>
+      </tr>
+      <tr>
+        <td>5️⃣</td>
+        <td>Hashira Training Arc</td>
+        <td>TV Series</td>
+        <td>8 Episodes (approx)</td>
+        <td>2024</td>
+        <td>Prepares for the final battle.</td>
+      </tr>
+      <tr>
+        <td>6️⃣</td>
+        <td>Infinity Castle Arc</td>
+        <td>Movie(s)</td>
+        <td>TBA</td>
+        <td>2025–2026 (expected)</td>
+        <td>Final epic saga 🔥</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
