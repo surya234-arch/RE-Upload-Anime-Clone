@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solo Leveling - Anime Info</title>
+  <!-- <link rel="stylesheet" href="sololeveling.css"> -->
+   <style>
+    body {
+  background: radial-gradient(circle at top, #0a0a0a, #050d1a 70%);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main container */
+.anime-detail {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(0, 180, 255, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-detail:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 45px rgba(0, 180, 255, 0.7);
+}
+
+/* Image section */
+.image-container {
+  flex: 1 1 45%;
+  min-width: 300px;
+  max-height: 450px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.4s ease;
+  filter: brightness(0.85) contrast(1.1);
+}
+
+.image-container img:hover {
+  transform: scale(1.07);
+  filter: brightness(1) contrast(1.2);
+}
+
+/* Info section */
+.info-container {
+  flex: 1 1 50%;
+  padding: 30px 40px;
+}
+
+.info-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00b4ff;
+  text-shadow: 0 0 20px rgba(0, 180, 255, 0.8);
+}
+
+.tagline {
+  font-style: italic;
+  color: #a882ff;
+  margin-bottom: 20px;
+}
+
+.details p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+.desc {
+  margin-top: 15px;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: #e0e0e0;
+}
+
+/* Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 25px;
+  background: transparent;
+  border: 2px solid #00b4ff;
+  color: #00b4ff;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #00b4ff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .anime-detail {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    max-height: 300px;
+  }
+
+  .info-container {
+    padding: 20px;
+  }
+
+  .info-container h1 {
+    font-size: 2rem;
+  }
+}
+
+   </style>
+</head>
+<body>
+
+  <div class="anime-detail">
+    <div class="image-container">
+      <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTLFB7D1IF9M7NTQekGKkuA0hJgi65TD6CzC3dWyStMWd-BFncVr-BC-2EZEyA-NUGIudyjcwuf1w_yI-oj8KQak-rIJqupHl9KOZe2trx9" alt="Solo Leveling">
+    </div>
+
+    <div class="info-container">
+      <h1>Solo Leveling</h1>
+      <p class="tagline">"From the weakest hunter to the Shadow Monarch."</p>
+      <div class="details">
+        <p><b>🎬 Genre:</b> Action, Fantasy, Adventure</p>
+        <p><b>📅 Seasons:</b> 1</p>
+        <p><b>🎞️ Episodes:</b> 12</p>
+        <p><b>⭐ Rating:</b> 9.4/10</p>
+      </div>
+      <p class="desc">
+        Sung Jin-Woo, the world's weakest hunter, discovers a mysterious system that grants him limitless power.  
+        As he levels up, he must face deadly dungeons, monsters, and his own dark destiny.
+      </p>
+
+      <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+  </div>
+
+</body>
+</html>
