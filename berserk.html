@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berserk - Watch Order & Info</title>
+
+  <style>
+    body {
+      background: radial-gradient(circle at center, #000, #1a0000, #000);
+      color: #f5f5f5;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .anime-detail {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      background: rgba(20, 0, 0, 0.8);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(255, 0, 0, 0.4);
+      margin-bottom: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .anime-detail:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 60px rgba(255, 0, 0, 0.7);
+    }
+
+    .image-container {
+      flex: 1 1 45%;
+      min-width: 300px;
+      max-height: 450px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease, filter 0.4s ease;
+      filter: brightness(0.8) contrast(1.2);
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+      filter: brightness(1) contrast(1.4);
+    }
+
+    .info-container {
+      flex: 1 1 50%;
+      padding: 30px 40px;
+    }
+
+    .info-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ff0000;
+      text-shadow: 0 0 25px rgba(255, 0, 0, 0.9);
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #ffcc70;
+      margin-bottom: 20px;
+    }
+
+    .details p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .desc {
+      margin-top: 15px;
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #ddd;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: transparent;
+      border: 2px solid #ff0000;
+      color: #ff0000;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #ff0000;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* ---------- Watch Order Section ---------- */
+    .watch-order {
+      max-width: 1000px;
+      background: rgba(20, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 35px rgba(255, 0, 0, 0.5);
+    }
+
+    .watch-order h2 {
+      text-align: center;
+      color: #ff0000;
+      text-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    th {
+      background-color: rgba(255, 0, 0, 0.3);
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: rgba(255, 0, 0, 0.15);
+      transition: 0.3s ease;
+    }
+
+    .rating {
+      color: #ffcc70;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(255, 204, 112, 0.7);
+    }
+
+    @media (max-width: 768px) {
+      .anime-detail {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-container {
+        max-height: 300px;
+      }
+
+      .info-container {
+        padding: 20px;
+      }
+
+      .info-container h1 {
+        font-size: 2rem;
+      }
+
+      th, td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- MAIN INFO SECTION -->
+  <div class="anime-detail">
+    <div class="image-container">
+      <img src="data:image/jpeg;base64,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" alt="Berserk">
+    </div>
+
+    <div class="info-container">
+      <h1>Berserk</h1>
+      <p class="tagline">“Even if we painstakingly piece together something lost, it doesn’t mean things will ever go back to how they were.”</p>
+
+      <div class="details">
+        <p><b>⚔️ Genre:</b> Dark Fantasy, Action, Psychological, Tragedy</p>
+        <p><b>📅 Seasons:</b> 3 main adaptations</p>
+        <p><b>🎞️ Movies:</b> 3 (Golden Age Arc trilogy)</p>
+        <p><b>⭐ Rating:</b> <span class="rating">9.1 / 10</span></p>
+      </div>
+
+      <p class="desc">
+        Berserk follows <b>Guts</b>, a lone mercenary with a massive sword and a tragic past.  
+        Haunted by destiny and betrayal, he walks a blood-soaked path seeking vengeance  
+        against his former friend <b>Griffith</b> — now a demonic god-hand. This anime defines  
+        dark fantasy with unmatched brutality and emotion. 🩸
+      </p>
+
+      <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <!-- WATCH ORDER SECTION -->
+  <div class="watch-order">
+    <h2>📺 Watch Order (Chronological)</h2>
+    <table>
+      <tr>
+        <th>Order</th>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Episodes / Duration</th>
+        <th>Year</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>1️⃣</td>
+        <td><b>Berserk (1997)</b></td>
+        <td>TV Series</td>
+        <td>25 Episodes</td>
+        <td>1997</td>
+        <td>Classic adaptation of the Golden Age arc. Start here.</td>
+      </tr>
+      <tr>
+        <td>2️⃣</td>
+        <td><b>Berserk: The Golden Age Arc I - The Egg of the King</b></td>
+        <td>Movie</td>
+        <td>1h 16m</td>
+        <td>2012</td>
+        <td>Remake of the early Golden Age story.</td>
+      </tr>
+      <tr>
+        <td>3️⃣</td>
+        <td><b>Berserk: The Golden Age Arc II - The Battle for Doldrey</b></td>
+        <td>Movie</td>
+        <td>1h 32m</td>
+        <td>2012</td>
+        <td>Continuation of Guts’ rise in the Band of the Hawk.</td>
+      </tr>
+      <tr>
+        <td>4️⃣</td>
+        <td><b>Berserk: The Golden Age Arc III - The Advent</b></td>
+        <td>Movie</td>
+        <td>1h 47m</td>
+        <td>2013</td>
+        <td>Tragic Eclipse event. Essential to understand the curse and mark.</td>
+      </tr>
+      <tr>
+        <td>5️⃣</td>
+        <td><b>Berserk (2016–2017)</b></td>
+        <td>TV Series</td>
+        <td>24 Episodes</td>
+        <td>2016–2017</td>
+        <td>Continues the story after Golden Age arc. (CGI heavy)</td>
+      </tr>
+      <tr>
+        <td>6️⃣</td>
+        <td><b>Berserk: The Golden Age Arc - Memorial Edition</b></td>
+        <td>Remastered Series</td>
+        <td>13 Episodes</td>
+        <td>2022</td>
+        <td>HD remaster with extra scenes, best for new viewers.</td>
+      </tr>
+    </table>
+  </div>
+
+</body>
+</html>
