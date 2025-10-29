@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name (Kimi no Na wa) - Movie Info</title>
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #1a1a40, #000010);
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .movie-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 40px rgba(86, 160, 255, 0.5);
+      backdrop-filter: blur(10px);
+      margin-bottom: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .movie-container:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 60px rgba(100, 180, 255, 0.8);
+    }
+
+    .image-container {
+      flex: 1 1 45%;
+      min-width: 300px;
+      max-height: 450px;
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.1);
+    }
+
+    .info-container {
+      flex: 1 1 50%;
+      padding: 30px 40px;
+    }
+
+    .info-container h1 {
+      font-size: 2.5rem;
+      color: #78aaff;
+      text-shadow: 0 0 25px rgba(120, 170, 255, 0.9);
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #ffcc70;
+      margin-bottom: 20px;
+    }
+
+    .details p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+
+    .desc {
+      margin-top: 15px;
+      line-height: 1.6;
+      font-size: 1.05rem;
+      color: #ddd;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: transparent;
+      border: 2px solid #78aaff;
+      color: #78aaff;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: #78aaff;
+      color: #000;
+      transform: scale(1.05);
+    }
+
+    /* Watch Info Section */
+    .watch-info {
+      max-width: 1000px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 35px rgba(120, 170, 255, 0.5);
+    }
+
+    .watch-info h2 {
+      text-align: center;
+      color: #78aaff;
+      text-shadow: 0 0 20px rgba(120, 170, 255, 0.8);
+      margin-bottom: 25px;
+      font-size: 2rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 15px;
+    }
+
+    th, td {
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    th {
+      background-color: rgba(120, 170, 255, 0.2);
+      color: #fff;
+    }
+
+    tr:hover {
+      background-color: rgba(120, 170, 255, 0.1);
+      transition: 0.3s ease;
+    }
+
+    .rating {
+      color: #ffcc70;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(255, 204, 112, 0.7);
+    }
+
+    @media (max-width: 768px) {
+      .movie-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .image-container {
+        max-height: 300px;
+      }
+
+      .info-container {
+        padding: 20px;
+      }
+
+      .info-container h1 {
+        font-size: 2rem;
+      }
+
+      th, td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="movie-container">
+    <div class="image-container">
+      <img src="https://4kwallpapers.com/images/walls/thumbs_2t/19857.jpg" alt="Your Name">
+    </div>
+
+    <div class="info-container">
+      <h1>Your Name (Kimi no Na wa)</h1>
+      <p class="tagline">“I’m always searching for something, for someone.”</p>
+
+      <div class="details">
+        <p><b>🎞️ Type:</b> Movie</p>
+        <p><b>📅 Release Year:</b> 2016</p>
+        <p><b>🕰️ Duration:</b> 1h 46m</p>
+        <p><b>⭐ Rating:</b> <span class="rating">9.3 / 10</span></p>
+        <p><b>🎬 Director:</b> Makoto Shinkai</p>
+        <p><b>🏷️ Genre:</b> Romance, Fantasy, Drama, Supernatural</p>
+      </div>
+
+      <p class="desc">
+        <b>Your Name</b> tells the story of <b>Taki</b> and <b>Mitsuha</b>, two teenagers living 
+        completely different lives who mysteriously start switching bodies.  
+        Their journey transcends time, dreams, and destiny — connecting two souls across worlds.  
+        Stunning visuals, emotional storytelling, and unforgettable music make it an anime legend 🌠
+      </p>
+
+      <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+  </div>
+
+  <div class="watch-info">
+    <h2>📺 Watch Information</h2>
+    <table>
+      <tr>
+        <th>Order</th>
+        <th>Title</th>
+        <th>Type</th>
+        <th>Year</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>1️⃣</td>
+        <td><b>Your Name (Kimi no Na wa)</b></td>
+        <td>Movie</td>
+        <td>2016</td>
+        <td>Main movie — standalone story, no sequels needed.</td>
+      </tr>
+      
+    </table>
+  </div>
+
+</body>
+</html>
